@@ -1,0 +1,16 @@
+{
+	"name": "sst-modal-test",
+	"version": "0.0.0",
+	"workspaces": ["packages/*"],
+	"scripts": {
+		"dev": "sst dev"
+	},
+	"devDependencies": {
+		"@tsconfig/node20": "^20.1.4",
+		"typescript": "5.3.3"
+	},
+	"dependencies": {
+		"@pulumi/command": "^1.0.1",
+		"sst": "3.1.38"
+	}
+}

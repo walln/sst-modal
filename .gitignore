@@ -1,0 +1,10 @@
+node_modules
+
+# sst
+.sst
+
+# temporary files
+.#*
+
+__pycache__
+node_modules

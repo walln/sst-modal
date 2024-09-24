@@ -1,0 +1,17 @@
+[project]
+name = "functions"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "sst",
+]
+
+
+[tool.uv.sources]
+# TODO: Before merging this PR, replace with SST's own source
+sst = { git = "https://github.com/sst/ion.git", subdirectory = "sdk/python" }
+
+[tool.setuptools]
+py-modules = []
