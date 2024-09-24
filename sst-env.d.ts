@@ -5,6 +5,19 @@ import "sst"
 export {}
 declare module "sst" {
   export interface Resource {
+    "FunctionA": {
+      "app": string
+      "environment": string
+      "type": "custom.modal.Deployment"
+    }
+    "ModalTokenId": {
+      "type": "sst.sst.Secret"
+      "value": string
+    }
+    "ModalTokenSecret": {
+      "type": "sst.sst.Secret"
+      "value": string
+    }
     "SecretA": {
       "type": "sst.sst.Secret"
       "value": string

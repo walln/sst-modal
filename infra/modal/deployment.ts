@@ -63,6 +63,13 @@ export class ModalDeployment extends $util.ComponentResource {
 	}
 }
 
+sst.Linkable.wrap(ModalDeployment, (resource) => ({
+	properties: {
+		app: resource.appName,
+		environment: resource.environment.environment,
+	},
+}));
+
 const __pulumiType = "custom:modal:Deployment";
 // @ts-expect-error
 ModalDeployment.__pulumiType = __pulumiType;

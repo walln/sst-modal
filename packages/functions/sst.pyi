@@ -3,6 +3,16 @@
 from typing import Any
 
 class Resource:
+    class FunctionA:
+        app: str
+        environment: str
+        type: str
+    class ModalTokenId:
+        type: str
+        value: str
+    class ModalTokenSecret:
+        type: str
+        value: str
     class SecretA:
         type: str
         value: str
